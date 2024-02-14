@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nike Landing Page</title>
+	<style>
+		body {
+  margin: 0;
+  padding: 0;
+  background-image: url("BG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.centered-div {
+  width: 1100px;
+  height: 535px;
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+  backdrop-filter: blur(.1px); /* Adding the blur effect */
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head-div {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 100;
+}
+
+.head-div .nike-logo {
+  height: 40px; 
+  margin-right: 50px;
+}
+
+.head-div .navigation-bar {
+  color: white;
+  font-size: 18px;
+}
+
+.head-div .navigation-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.head-div .navigation-bar li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.head-div .navigation-bar a {
+  text-decoration: none;
+  color: white;
+}
+  .content-div {
+ position: absolute;
+  top: 10%;
+  left: 1%;
+  text-align: left;
+  color: white;
+  z-index: 100;
+}
+
+.content-div h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.content-div h3 {
+  font-size: 44px;
+  margin-top: 10px;
+}
+.content-div p {
+
+}
+
+.shoe-image-div {
+  position: absolute;
+  top: 50%;
+  left: calc(20px + 20%); 
+  transform: translateY(-50%);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.nike-shoe-image {
+  width: 945px;
+  height: 839px;
+  border-radius: 10px;
+  animation: backInDown 1.5s ease;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  background-image: linear-gradient(#972CFA, #FFFFFF);
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: white;
+  outline: none;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-800px) scale(0.7);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translateY(0px) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+	</style>
+</head>
+<body>
+	<div class="centered-div">
+		
+<div class="head-div">
+<img src="Logo.png" alt="Nike Logo" class="nike-logo">
+
+  <!-- Navigation Bar -->
+  <nav class="navigation-bar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Catalog</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="shoe-image-div">
+  <img src="shoe.png" alt="Nike Shoe" class="nike-shoe-image">
+</div>
+
+<div class="content-div">
+    <h1>NIKE AIR MAX 95</h1>
+    <h3>$417</h3>
+    <p>Taking inspiration from the human body and '90s athletics aesthetics,<br> the Air Max 95 mixes unbelievable comfort with fast-paced style.<br> The wavy side panels add natural flow to any outfit, while visible Nike<br> Air in the heel and forefoot delivers performance comfort.</p>
+    <button class="btn">SEE DETALS</button>
+  </div>
+ 
+</div>
+
+</body>
+</html>
